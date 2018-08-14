@@ -31,7 +31,7 @@ std::string hasData(std::string s) {
 // get_throttle, the function that decides the throttle given the car's current speed and steering angle
 double get_throttle(double speed, double angle) {
   speed = fabs(speed);
-  double max_speed = 10.0; // controls the highest speed the car will go at without braking
+  double max_speed = 20.0; // Controls the highest speed the car will go at without braking. I used to have a bug that decreased performance dramatically, making this have to be lower.
   if(speed >= max_speed) {
     if(speed < (max_speed + 10.0)) {
       return(-(speed - max_speed) / 10.0);
@@ -48,7 +48,7 @@ int main()
   uWS::Hub h;
 
   PID pid;
-  pid.Init(0.1, 0.0001, 2000.0); // Position, Integral, Derivative
+  pid.Init(0.15, 0.0001, 1750.0); // Position, Integral, Derivative
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.

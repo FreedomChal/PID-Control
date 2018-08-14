@@ -27,12 +27,14 @@ void PID::UpdateError(double cte) {
     clock_t delta_t = current_timestamp_ - previous_timestamp_;
     previous_timestamp_ = current_timestamp_;
     d_error = (cte - p_error) / delta_t;
+    p_error = cte;
   }
   
 
 }
 
 double PID::TotalError() {
-  return(-(Kp * p_error) - (Ki * i_error) - (Kd * d_error));
+  double error_multiplier = 0.9;
+  return((-(Kp * p_error) - (Ki * i_error) - (Kd * d_error)) * error_multiplier);
 }
 
