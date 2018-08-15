@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/PID.cpp
+/home/fredom/SelfDrivingCar/PID-Control/src/PID.cpp
 PID.h
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/PID.h
+/home/fredom/SelfDrivingCar/PID-Control/src/PID.h
 
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/PID.h
+/home/fredom/SelfDrivingCar/PID-Control/src/PID.h
 time.h
 -
 
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/json.hpp
+/home/fredom/SelfDrivingCar/PID-Control/src/json.hpp
 algorithm
 -
 array
@@ -70,15 +70,15 @@ utility
 vector
 -
 
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/main.cpp
+/home/fredom/SelfDrivingCar/PID-Control/src/main.cpp
 uWS/uWS.h
 -
 iostream
 -
 json.hpp
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/json.hpp
+/home/fredom/SelfDrivingCar/PID-Control/src/json.hpp
 PID.h
-/home/fredom/SelfDrivingCar/CarND-PID-Control-Project/src/PID.h
+/home/fredom/SelfDrivingCar/PID-Control/src/PID.h
 math.h
 -
 

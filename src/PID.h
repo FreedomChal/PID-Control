@@ -20,7 +20,6 @@ public:
 
   // Other
   bool is_initialized_ = false;
-  clock_t previous_timestamp_;
 
   /*
   * Constructor
